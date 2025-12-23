@@ -1,5 +1,14 @@
 ---
 const pageTitle = "Sobre Mim";
+
+const identify = {
+  firstName: "Manoel",
+  country: "Brasil",
+  occupation: "Desenvolvimento",
+  hobbies: ["leitura", "praia", "futebol"],
+};
+
+const skills = ["HTML", "CSS", "JavaScript", "Astro"];
 ---
 
 <html lang="en">
@@ -27,5 +36,18 @@ const pageTitle = "Sobre Mim";
             Este site será atualizado enquanto eu completo mais desse tutorial,
             então continue verificando e veja como minha jornada está indo!
         </p>
+
+        <p>Aqui estão alguns fatos sobre mim:</p>
+        <ul>
+            <li>Meu nome é {identify.firstName}.</li>
+            <li>Eu moro no {identify.country} e eu trabalho como {identify.occupation}.</li>
+            {identify.hobbies.length >= 2 && 
+                <li>Dois dos meus hobbies são: {identify.hobbies[0]} e {identify.hobbies[1]}</li> 
+            }
+        </ul>
+        <p>Minhas habilidades são:</p>
+        <ul>
+            {skills.map((habilidades) => <li>{habilidades}</li>)}
+        </ul>
     </body>
 </html>
