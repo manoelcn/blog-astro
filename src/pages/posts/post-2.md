@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: Minha Segunda Postagem no Blog
 author: Manoel Cândido
 description: "Após aprender um pouco sobre Astro, eu não consegui parar!"

@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: Minha Terceira Postagem no Blog
 author: Manoel Cândido
 description: "Eu tive alguns desafios, mas perguntar na comunidade realmente me ajudou!"
